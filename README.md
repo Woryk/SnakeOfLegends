@@ -2,7 +2,7 @@
   <img src="https://i.imgur.com/D1SmNCd.png">
 </p>
 
-# Projet-ProgAvan
+# Snake Of Legends
 Jeu vidéo Snake réalisé dans le cadre d'un projet d'études.
 <br />
 <p align="center" font-size="20x" >
