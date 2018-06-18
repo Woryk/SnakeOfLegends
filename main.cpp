@@ -82,7 +82,12 @@ int main(int argc, char **argv) {
 
 	////////////////////////////////
 	// Window
-	SDL_Window * window = SDL_CreateWindow("Snake", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 600, 630, SDL_WINDOW_SHOWN);
+	SDL_Window * window = SDL_CreateWindow("Snake of Legends", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 600, 630, SDL_WINDOW_SHOWN);
+
+    // Window Icon
+    SDL_Surface* wIcon = SDL_LoadBMP("textures/icon.bmp");
+    SDL_SetColorKey(wIcon,SDL_TRUE,SDL_MapRGB(wIcon->format, 238, 0, 255));
+    SDL_SetWindowIcon(window, wIcon);
 
 	////////////////////////////////
 	// Renderer
