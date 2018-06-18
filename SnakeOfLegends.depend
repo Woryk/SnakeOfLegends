@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1529341489 source:d:\users\damien\documents\github\snakeoflegends\main.cpp
+	<SDL2/SDL.h>
+	<SDL2/SDL_ttf.h>
+	"game.hpp"
+	"snake.hpp"
+	<stdio.h>
+	<string>
+	<stdlib.h>
+	<iostream>
+	<fstream>
+	<time.h>
+
+1529340729 d:\users\damien\documents\github\snakeoflegends\game.hpp
+	<SDL2/SDL.h>
+	"snake.hpp"
+
+1529340729 d:\users\damien\documents\github\snakeoflegends\snake.hpp
+	"game.hpp"
+
+1529340729 source:d:\users\damien\documents\github\snakeoflegends\snake.cpp
+	"snake.hpp"
+	<iostream>
+
+1529340904 source:d:\users\damien\documents\github\snakeoflegends\game.cpp
+	<SDL2/SDL.h>
+	"game.hpp"
+	<cstdlib>
+	<ctime>
+	<iostream>
+

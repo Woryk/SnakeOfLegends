@@ -36,7 +36,6 @@ void LoadMap(int SelectedLevel,float** table2D,int dim_allocated,int map_width,i
 ///////////////////////////////////////////////////////
 void DrawMap(SDL_Surface* screen, SDL_Texture* wall, float** table, int map_width, int map_height, int tile_width, int tile_height, SDL_Renderer * sdlRenderer)
 {
-	int i, j;
 	SDL_Rect Rect_dest;
     SDL_Rect Rect_source = {0, 0, 30, 30};
 	Rect_dest.w = tile_width;
@@ -59,7 +58,6 @@ void DrawMap(SDL_Surface* screen, SDL_Texture* wall, float** table, int map_widt
 void DrawFruits (struct Apple* apple, SDL_Texture* apple_texture,float** table, int map_width, int map_height, int tile_width, int tile_height, SDL_Renderer * sdlRenderer, struct Snake* snake, int* tailX, int* tailY)
 {
     int randHeight, randWidth;
-    srand(time(0));
     randHeight = rand() % ((map_height-1) - 1 + 1);
     randWidth = rand() % ((map_width-1) - 1 + 1);
     SDL_Rect Rect_source = {0, 0, 30, 30};;

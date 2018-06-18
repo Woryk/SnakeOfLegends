@@ -7,6 +7,7 @@
 #include <stdlib.h>
 #include <iostream>
 #include <fstream>
+#include <time.h>
 
 using namespace std;
 
@@ -23,6 +24,9 @@ int main(int argc, char **argv) {
     // Blocs dimensions
     const int tile_width = 30;
     const int tile_height = 30;
+
+    // Initializing random
+    srand(time(0));
 
 	// Snake
 	Snake snake;
@@ -805,7 +809,8 @@ int main(int argc, char **argv) {
         // Snake body variables
         int prevX = tailX[0];
         int prevY = tailY[0];
-        int prev2X, prev2Y;
+        int prev2X = 0;
+        int prev2Y = 0;
 
         // Removing snake textures
         SDL_Rect grass_rect_src = { 0, 0, 30, 30};
